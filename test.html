@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  max-width: 700px;
+  margin: auto;
+}
+
+
+/*body {
+    min-width: 500px;
+}*/
+
+div {
+  border-radius: 5px;
+}
+
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #ffcccc;
+  position: fixed;
+  z-index: 1;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #ffcccc;
+  clear: both;
+  position: relative;
+}
+
+.left {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 1000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: right;
+  position: inherit;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  height: 1000px;
+}
+
+p,
+li {
+  font-family: 'Cormorant Garamond';
+}
+
+.head {
+  font-size: 20px;
+}
+
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+#name{
+    padding-right:200px ;
+    margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+    </style>
+    
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="left"></div>
+    <div class="stuff">
+      <br><br>
+      <h1>Resume</h1>
+      <h2 id="name">Emily</h2>
+
+      <br>
+      <p class="head">Interests</p>
+      <ul>
+        <li id="intrest1">Drawing</li>
+        <li id="intrest2">Photography</li>
+        <li id="intrest3">Design</li>
+        <li id="intrest4">Programming</li>
+      </ul>
+      <p class="head">Skills</p>
+      <ul>
+        <li id="skill1">Web Design with HTML & CSS</li>
+        <li id="skill2">Web Design with HTML & CSS</li>
+      </ul>
+      <p class="head">Education</p>
+      <ul>
+        <li id="pg_collage"></li>
+        <!--Link-->
+        <li id="ug_collage"></li>
+      </ul>
+      <p class="head">Experience</p>
+      <ul>
+        <li id="exp1">Student Technology Intern for Wilton School District</li>
+        <li id="exp2">Babysitter</li>
+      </ul>
+      <p class="head">Extracurriculars</p>
+      <ul>
+        <li id="exc1">Recycling Club</li>
+        <li id="exc2">Gardening Club</li>
+        <li id="exc3">Book Club</li>
+      </ul>
+    </div>
+    <div class="right"></div>
+    <div id="footer">
+      </div> 
+      <script>
+        var name = prompt("enter name")
+        var interest1 = prompt("enter first intrest");
+        var interest2 = prompt("enter second intrest");
+        var interest3 = prompt("enter third intrest");
+        var interest4 = prompt("enter fourth intrest");
+        var skill1 = prompt("Enter first skill");
+        var skill2 = prompt("Enter second skill");
+        var pgcollage = prompt("Enter pg collange name");
+        var ug_collage = prompt("Enter ug collage name");
+        var exp1 = prompt("Enter experience");
+        var exp2 = prompt("Enter experience");
+        var exc1 = prompt("Enter extra work");
+        var exc2 = prompt("Enter Extra work");
+        var exc3 = prompt("ENter extra work");
+        document.getElementById("name").innerHTML=name;
+        document.getElementById("intrest1").innerHTML=interest1;
+        document.getElementById("intrest2").innerHTML=interest2;
+        document.getElementById("intrest3").innerHTML=interest3;
+        document.getElementById("intrest4").innerHTML=interest4;
+        document.getElementById("skill1").innerHTML=skill1;
+        document.getElementById("skill2").innerHTML=skill2;
+        document.getElementById("pg_collage").innerHTML = pgcollage;
+        document.getElementById("ug_collage").innerHTML=ug_collage;
+        document.getElementById("exp1").innerHTML=exp1;
+        document.getElementById("exp2").innerHTML=exp2;
+        document.getElementById("exc1").innerHTML=exc1;
+        document.getElementById("exc2").innerHTML=exc2;
+        document.getElementById("exc3").innerHTML=exc3;
+    </script>
+</body>
+</html>

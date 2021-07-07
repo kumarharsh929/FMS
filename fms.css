@@ -1,0 +1,234 @@
+.cus
+        {
+            width: 330px;
+            padding:6px;
+        }
+        img{
+            max-width:580px;
+            }   
+        input[type=file]{
+            padding:10px;
+            background:#2d2d2d;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: .3px;
+            direction: ltr;
+            font-feature-settings: "lnum" 1;
+            text-align: center;
+            margin: 0;
+            border: 0;
+            font: inherit;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            box-sizing: border-box;
+            background: #4e83df;
+            font-weight: 600;
+            line-height: 32px;
+            vertical-align: middle;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: all .1s linear;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px 0 rgba(0,0,0,.14);
+            order: 1;
+            max-width: 60vw;
+            font-size: 22px;
+            padding: 20px 25px;
+            background-color: #4e83df;
+            color:black;
+            position: relative;
+            z-index: 1;
+            }
+            .card
+        {
+            width: 140px;
+            float:left;
+            height:140px;
+        }
+        .show
+        {
+            font-size: 125px;
+            margin: 50px;
+            float: left;
+        }
+        .innam
+        {
+            width:150px;
+            font-size:20px;
+            float:left;
+            
+        }
+        .roundrr 
+        {
+            animation: rotate-all 2s 0 infinite linear alternate;
+        }
+
+        .divi1 
+        {
+            width: 80px;
+            height: 80px;
+            background-color: #669999;
+            position: relative;
+            margin: auto;
+            animation: square-to-circle 2.5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+        }
+
+        .divi2 
+        {
+            width: 80px;
+            height: 80px;
+            background-color: #669999;
+            position: relative;
+            margin: auto;
+            animation: square-to-circle2 2.5s .42s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+        }
+
+        #done 
+        {
+        top: 150px;
+        }
+        
+        #dtwo 
+        {
+        top: 150px;
+        right: 80px;
+        }
+
+        #dthree 
+        {
+        top: 150px;
+        }
+
+        #dfour 
+        {
+        bottom: 10px;
+        left: 80px;
+        }
+
+        @keyframes square-to-circle 
+        {
+            0%  
+            {
+                border-radius:0 0 0 0;
+                transform:rotate(45deg);
+            }
+            25%  
+            {
+                border-radius:50% 0 0 0;
+                background:darksalmon;
+                transform:rotate(135deg);
+            }
+            50%  
+            {
+                border-radius:50% 50% 0 0;
+                background:indianred;
+                transform:rotate(180deg);
+            }
+            75%  
+            { 
+                border-radius:50% 50% 50% 0;
+                background:lightcoral;
+                transform:rotate(315deg);
+            }
+            100% 
+            {  
+                border-radius:50%;
+                background:darksalmon;
+                transform:rotate(404deg);
+            }
+        }
+
+        @keyframes square-to-circle2 
+        {
+            0%  
+            {
+                border-radius:0 0 0 0;
+                transform:rotate(45deg);
+            }
+            25%  
+            {
+                border-radius:0 0 50% 0;
+                background:darksalmon;
+                transform:rotate(135deg);
+            }
+            50%  
+            {
+                border-radius:0 0 50% 50%;
+                background:indianred;
+                transform:rotate(180deg);
+            }
+            75%  
+            { 
+                border-radius:50% 0 50% 50%;
+                background:lightcoral;
+                transform:rotate(315deg);
+            }
+            100% 
+            {  
+                border-radius:50%;
+                background:darksalmon;
+                transform:rotate(404deg);
+            }
+        }
+.image
+{
+float:left;
+position: absolute;
+width:250px;
+height:250px;
+margin-left:50px;
+border-radius:50%;
+text-align:center;
+}
+.image1
+{
+float:left;
+position: absolute;
+width:150px;
+height:150px;
+margin-left:50px;
+border-radius:50%;
+text-align:center;
+}
+.accordion {
+background-color:white;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 20%;
+text-align: left;
+font-size: 13px;
+transition: 0.4s;
+}
+
+.panel {
+padding: 0 10px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+width:220px;
+transition: max-height 0.2s ease-out;
+}
+.accordionf {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.panelf {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
